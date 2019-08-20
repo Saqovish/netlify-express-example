@@ -13,7 +13,9 @@ router.get('/', (req, res) => {
     res.status(200).sendFile('index.html', { root: clientPath });
 });
 
-router.get('/')
+router.get('/hello', (req, res) => {
+    res.send('Hello, world!');
+});
 
 app.use('/.netlify/functions/index', router);
 
