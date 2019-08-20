@@ -9,11 +9,13 @@ const router = express.Router();
 app.use(bodyParser.json());
 
 router.get('/', (req, res) => {
-    console.log("Hello, world");
-    res.sendFile(path.join(__dirname, '../build/index.html'));
+    const clientPath = path.resolve('./build');
+    res.status(200).sendFile('index.html', { root: clientPath });
 });
 
-app.use('/.netlify/functions/server', router);
+router.get('/')
+
+app.use('/.netlify/functions/index', router);
 
 module.exports = app;
 module.exports.handler = serverless(app);
