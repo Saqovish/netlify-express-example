@@ -1,0 +1,27 @@
+{
+  "name": "netlify-express-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "netlify-lambda build server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saqovish/netlify-express-example.git"
+  },
+  "keywords": [],
+  "author": "Abdellah SAQ <k.abdellah.saq@gmail.com> (https://saqovish.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saqovish/netlify-express-example/issues"
+  },
+  "homepage": "https://github.com/Saqovish/netlify-express-example#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.2",
+    "serverless-http": "^2.2.0"
+  }
+}
